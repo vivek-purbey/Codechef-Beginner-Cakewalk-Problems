@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n, rem;
+	cin>>n;
+	rem=(n*n)/2;
+	cout<<rem;
+	return 0;
+}
