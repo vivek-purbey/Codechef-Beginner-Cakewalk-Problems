@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int a, b, c, d, result;
+	    cin>>a>>b>>c>>d;
+	    cout<<(c/a)+(d/b)<<endl;
+	}
+	return 0;
+}
