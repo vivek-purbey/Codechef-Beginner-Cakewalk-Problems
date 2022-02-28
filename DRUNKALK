@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int k;
+	    cin>>k;
+	    if(k%2==1)
+	    cout<<k+2<<endl;
+	    else
+	    cout<<k<<endl;
+	}
+	return 0;
+}
