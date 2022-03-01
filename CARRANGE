@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int p,m,v;
+	    cin>>p>>m>>v;
+	    if(p-1==0)
+	    cout<<m*v<<endl;
+	    else
+	    cout<<(m-(p-1))*v<<endl;
+	}
+	return 0;
+}
