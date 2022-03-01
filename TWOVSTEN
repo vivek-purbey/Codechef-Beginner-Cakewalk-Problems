@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int x, count=0;
+	    cin>>x;
+	    if(x%10==0)
+	    cout<<0<<endl;
+	    if(x%10!=0)
+	    {
+	        x=x*2;
+	        if(x%10==0){
+	        count++;
+	        cout<<count<<endl;}
+	        else
+	        cout<<-1<<endl;
+	    }
+	}
+	return 0;
+}
