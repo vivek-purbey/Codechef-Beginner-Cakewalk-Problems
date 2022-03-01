@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int a,b,min,m;
+	    cin>>a>>b;
+	    min=max(a,b);
+	    m=a+b;
+	    cout<<min<<" "<<m<<endl;
+	}
+	return 0;
+}
