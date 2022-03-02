@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int X,Y,Xr,Yr,D;
+	    cin>>X>>Y>>Xr>>Yr>>D;
+	    if(min(X/Xr,Y/Yr)>=D)
+	    cout<<"YES"<<endl;
+	    else
+	    cout<<"NO"<<endl;
+	}
+	return 0;
+}
