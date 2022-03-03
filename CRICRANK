@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main() {
+	
+	int T;
+	cin>>T;
+	while(T--){
+	    int r1,w1,c1,r2,w2,c2,count_A=0,count_B=0;
+	    cin>>r1>>w1>>c1;//for player-A.
+	    cin>>r2>>w2>>c2;//for player-B.
+	    count_A=0,count_B=0;
+	    if(r1>r2)
+	    count_A++;
+	    else
+	    count_B++;
+	    if(w1>w2)
+	    count_A++;
+	    else
+	    count_B++;
+	    if(c1>c2)
+	    count_A++;
+	    else
+	    count_B++;
+	    if(count_A>count_B)
+	    cout<<"A"<<endl;
+	    else
+	    cout<<"B"<<endl;
+	}
+	return 0;
+}
