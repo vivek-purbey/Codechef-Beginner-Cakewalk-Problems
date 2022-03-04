@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int barc,real,eibar,malaga;
+	    for(int i=1;i<=4;i++)
+	    {
+	        string s;
+	        int x;
+	        cin>>s>>x;
+	        if(s=="Barcelona") barc=x;
+	        if(s=="Malaga") malaga=x;
+	        if(s=="RealMadrid") real=x;
+	        if(s=="Eibar") eibar=x;
+	    }
+	    if(barc>eibar && real<malaga) cout<<"Barcelona"<<endl;
+	    else cout<<"RealMadrid"<<endl;
+	}
+	return 0;
+}
