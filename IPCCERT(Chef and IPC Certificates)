@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int n,m,k,num,sum=0,rem=0,res=0,count=0;
+	cin>>n>>m>>k;
+	for(int i=1;i<=n;i++)
+	{
+	    sum=0;
+	    for(int j=1;j<=k+1;j++)
+	    {
+	        cin>>num;
+	        sum=sum+num; // adding all elements of one row
+	    }
+	    rem=sum-num; // adding first 4 number of one row
+	    res=sum-rem; // finding the last number of one row
+	    if(rem>=m && res<=10) count++; // condition to get certificate
+	    else count;
+	}
+	cout<<count<<endl; // Total number of participants who gets the certificate.
+	return 0;
+}
